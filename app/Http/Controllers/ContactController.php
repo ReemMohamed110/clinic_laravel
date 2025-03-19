@@ -10,7 +10,6 @@ class ContactController extends Controller
         return view('contact');
     }
     public function sendMessage(Request $request){
-        // dd($request);
         return redirect()->route('contact')->with('success','message sent successfully');
     }
 }
